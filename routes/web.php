@@ -17,7 +17,7 @@ Route::match(array('GET', 'POST'),'/', 'HomeController@index');
 
 Route::post('/get-json', 'HomeController@getJson');
 
-Route::get('/test', function () {
+Route::post('/test', function () {
     return view('hello-world');
 });
 
