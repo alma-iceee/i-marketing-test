@@ -40,7 +40,7 @@ $( document ).ready(function() {
         }
     );
 });
-
+/*
 function sendMessageAjaxForm(result_form, ajax_form, url) {
     $.ajaxSetup({
         headers: {
@@ -65,7 +65,7 @@ function sendMessageAjaxForm(result_form, ajax_form, url) {
         }
     });
 }
-
+*/
 
 //function popUp() {
 //    var popup = document.getElementById("btn");
