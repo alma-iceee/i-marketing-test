@@ -5,8 +5,8 @@
     <!-- ======= Hero Section ======= -->
     <section id="hero">
         <div class="hero-container" data-aos="fade-up">
-            <h1>{{$contents[0]->name}}</h1>
-            <h2>{{$contents[0]->text}}</h2>
+            <h1>{{$contents[8]->name}}</h1>
+            <h2>{{$contents[8]->text}}</h2>
             <a href="#about" class="btn-get-started scrollto"><i class="bx bx-chevrons-down"></i></a>
         </div>
     </section><!-- End Hero -->
@@ -21,10 +21,8 @@
             <div class="row no-gutters">
                 <div class="content col-xl-5 d-flex align-items-stretch" data-aos="fade-up">
                     <div class="content">
-                        <h3>{{$contents[1]->name}}</h3>
-                        <p>
-                            {{$contents[1]->text}}
-                        </p>
+                        <h3>{{$contents[7]->name}}</h3>
+                        <p>{{$contents[7]->text}}</p>
                         <a href="#" class="about-btn">About us <i class="bx bx-chevron-right"></i></a>
                     </div>
                 </div>
@@ -53,8 +51,8 @@
         <div class="container">
 
             <div class="section-title" data-aos="fade-in" data-aos-delay="100">
-                <h2>Services</h2>
-                <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                <h2>{{$contents[6]->name}}</h2>
+                <p>{{$contents[6]->text}}</p>
             </div>
 
             <div class="row">
@@ -143,8 +141,8 @@
         <div class="container" data-aos="zoom-in">
 
             <div class="text-center">
-                <h3>Call To Action</h3>
-                <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <h3>{{$contents[5]->name}}</h3>
+                <p>{{$contents[5]->text}}</p>
                 <a class="cta-btn" href="#">Call To Action</a>
             </div>
 
@@ -156,8 +154,8 @@
         <div class="container">
 
             <div class="section-title" data-aos="fade-in" data-aos-delay="100">
-                <h2>Portfolio</h2>
-                <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                <h2>{{$contents[4]->name}}</h2>
+                <p>{{$contents[4]->text}}</p>
             </div>
 
             <div class="row" data-aos="fade-in">
@@ -197,8 +195,8 @@
         <div class="container">
 
             <div class="section-title" data-aos="fade-in" data-aos-delay="100">
-                <h2>Testimonials</h2>
-                <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                <h2>{{$contents[3]->name}}</h2>
+                <p>{{$contents[3]->text}}</p>
             </div>
 
             <div class="owl-carousel testimonials-carousel">
@@ -226,8 +224,8 @@
         <div class="container">
 
             <div class="section-title" data-aos="fade-in" data-aos-delay="100">
-                <h2>Team</h2>
-                <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                <h2>{{$contents[2]->name}}</h2>
+                <p>{{$contents[2]->text}}</p>
             </div>
 
             <div class="row">
@@ -260,8 +258,8 @@
         <div class="container">
 
             <div class="section-title" data-aos="fade-in" data-aos-delay="100">
-                <h2>Contact</h2>
-                <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                <h2>{{$contents[1]->name}}</h2>
+                <p>{{$contents[1]->text}}</p>
             </div>
 
             <div class="row" data-aos="fade-up" data-aos-delay="100">
