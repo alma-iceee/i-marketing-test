@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\About;
 use App\Contact;
+use App\Content;
 use App\Map;
 use App\Portfolio;
 use App\PortfolioFilter;
@@ -17,6 +18,7 @@ class HomeController extends Controller
 {
     public function index()
     {
+        $contents = Content::all();
         $abouts = About::all();
         $services = Service::all();
         $portfolio_filters = PortfolioFilter::all();
@@ -34,7 +36,8 @@ class HomeController extends Controller
             'testimonials',
             'teammates',
             'contacts',
-            'maps'
+            'maps',
+            'contents'
         ));
     }
 
