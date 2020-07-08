@@ -63,8 +63,8 @@
 
                     <div class="col-lg-4 col-md-6">
                         <div class="footer-info" data-aos="fade-up" data-aos-delay="50">
-                            <h3>Squadfree</h3>
-                            <p class="pb-3"><em>Qui repudiandae et eum dolores alias sed ea. Qui suscipit veniam excepturi quod.</em></p>
+                            <h3>{{$contents[0]->name}}</h3>
+                            <p class="pb-3"><em>{{$contents[0]->text}}</em></p>
                             <p>
                                 A108 Adam Street <br>
                                 NY 535022, USA<br><br>
