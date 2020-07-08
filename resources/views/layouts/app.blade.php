@@ -109,8 +109,13 @@
 
                         <form method="post" id="ajax_form" action="">
                             <input type="email" name="email" placeholder="Your Email">
-                            <input type="submit" id="btn1" value="Subscribe">
+                            <input type="submit" id="btn1" rel="modal:open" value="Subscribe">
                         </form>
+
+                        <div id="ex1" class="modal">
+                            <p>Thanks for clicking. That felt good.</p>
+                            <a href="#" rel="modal:close">Close</a>
+                        </div>
 
                         <div id="subscribe_result_form"></div>
                     </div>
