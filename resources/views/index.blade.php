@@ -56,12 +56,13 @@
             </div>
 
             <div class="row">
-                @foreach($counts as $count)
+
+                @foreach($services as $service)
                 <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
                     <div class="icon-box" data-aos="fade-up">
-                        <div class="icon"><i class="bx {{$count->icon}}"></i></div>
-                        <h4 class="title"><a href="">{{$count->name}}</a></h4>
-                        <p class="description">{{$count->text}}</p>
+                        <div class="icon"><i class="bx {{$service->icon}}"></i></div>
+                        <h4 class="title"><a href="">{{$service->name}}</a></h4>
+                        <p class="description">{{$service->text}}</p>
                     </div>
                 </div>
                 @endforeach
@@ -77,37 +78,15 @@
 
             <div class="row no-gutters">
 
+                @foreach($counts as $count)
                 <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
                     <div class="count-box">
-                        <i class="icofont-simple-smile"></i>
-                        <span data-toggle="counter-up">232</span>
-                        <p><strong>Happy Clients</strong> consequuntur quae</p>
+                        <i class="icofont-{{$count->icon}}"></i>
+                        <span data-toggle="counter-up">{{$count->icon}}</span>
+                        <p><strong>{{$count->name}}</strong> {{$count->text}}</p>
                     </div>
                 </div>
-
-                <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
-                    <div class="count-box">
-                        <i class="icofont-document-folder"></i>
-                        <span data-toggle="counter-up">521</span>
-                        <p><strong>Projects</strong> adipisci atque cum quia aut</p>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
-                    <div class="count-box">
-                        <i class="icofont-live-support"></i>
-                        <span data-toggle="counter-up">1,463</span>
-                        <p><strong>Hours Of Support</strong> aut commodi quaerat</p>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
-                    <div class="count-box">
-                        <i class="icofont-users-alt-5"></i>
-                        <span data-toggle="counter-up">15</span>
-                        <p><strong>Hard Workers</strong> rerum asperiores dolor</p>
-                    </div>
-                </div>
+                @endforeach
 
             </div>
 
