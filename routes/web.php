@@ -17,8 +17,8 @@ Route::match(array('GET', 'POST'),'/', 'HomeController@index');
 
 Route::post('/get-json', 'HomeController@getJson');
 
-Route::post('/test', function () {
-    return view('test');
+Route::get('/test', function () {
+    return view('hello-world');
 });
 
 Route::group(['prefix' => 'admin'], function () {
