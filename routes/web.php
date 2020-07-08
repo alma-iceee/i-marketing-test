@@ -15,11 +15,9 @@ use Illuminate\Support\Facades\Route;
 
 Route::match(array('GET', 'POST'),'/', 'HomeController@index');
 
-Route::post('/get-json', 'HomeController@getJson');
+Route::post('/send-message', 'HomeController@getJsonSendMessage');
 
-Route::post('/test', function () {
-    return view('hello-world');
-});
+Route::post('/subscribe', 'HomeController@getJsonSubscribe');
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();

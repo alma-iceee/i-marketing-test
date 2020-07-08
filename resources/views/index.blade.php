@@ -309,7 +309,7 @@
                 </div>
 
                 <div class="col-lg-6">
-                    <form action="" method="post" role="form" class="php-email-form">
+                    <form action="" method="post" role="form" class="php-email-form" id="ajax_form">
                         <div class="form-row">
                             <div class="col-md-6 form-group">
                                 <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
@@ -333,7 +333,9 @@
                             <div class="error-message"></div>
                             <div class="sent-message">Your message has been sent. Thank you!</div>
                         </div>
-                        <div class="text-center"><button type="submit">Send Message</button></div>
+                        <div class="text-center"><button type="submit" id="btn2">Send Message</button></div>
+
+                        <div id="send_message_result_form"></div>
                     </form>
                 </div>
 

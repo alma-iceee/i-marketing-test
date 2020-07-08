@@ -2,8 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\About;
+use App\Contact;
+use App\Map;
 use App\Portfolio;
 use App\PortfolioFilter;
+use App\Service;
 use App\Teammate;
 use App\Testimonial;
 use App\User;
@@ -13,14 +17,38 @@ class HomeController extends Controller
 {
     public function index()
     {
-        $teammates = Teammate::all();
-        $testimonials = Testimonial::all();
-        $portfolios = Portfolio::all();
+        $abouts = About::all();
+        $services = Service::all();
         $portfolio_filters = PortfolioFilter::all();
-        return view('index', compact('teammates', 'testimonials', 'portfolios', 'portfolio_filters'));
+        $portfolios = Portfolio::all();
+        $testimonials = Testimonial::all();
+        $teammates = Teammate::all();
+        $contacts = Contact::all();
+        $maps = Map::all();
+
+        return view('index', compact(
+            'abouts',
+            'services',
+            'portfolio_filters',
+            'portfolios',
+            'testimonials',
+            'teammates',
+            'contacts',
+            'maps'
+        ));
     }
 
-    public function getJson()
+    public function getJsonSendMessage()
+    {
+        return array(
+            'name' => $_POST["name"],
+            'email' => $_POST["email"],
+            'subject' => $_POST["subject"],
+            'message' => $_POST["message"],
+        );
+    }
+
+    public function getJsonSubscribe()
     {
         return array(
             'email' => $_POST["email"],

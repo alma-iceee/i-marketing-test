@@ -109,10 +109,10 @@
 
                         <form method="post" id="ajax_form" action="">
                             <input type="email" name="email" placeholder="Your Email">
-                            <input type="submit" id="btn" value="Subscribe">
+                            <input type="submit" id="btn1" value="Subscribe">
                         </form>
 
-                        <div id="result_form"></div>
+                        <div id="subscribe_result_form"></div>
                     </div>
 
                 </div>
