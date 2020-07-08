@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\About;
 use App\Contact;
 use App\Content;
+use App\Count;
 use App\Map;
 use App\Portfolio;
 use App\PortfolioFilter;
@@ -27,6 +28,7 @@ class HomeController extends Controller
         $teammates = Teammate::all();
         $contacts = Contact::all();
         $maps = Map::all();
+        $counts = Count::all();
 
         return view('index', compact(
             'abouts',
@@ -37,7 +39,8 @@ class HomeController extends Controller
             'teammates',
             'contacts',
             'maps',
-            'contents'
+            'contents',
+            'counts'
         ));
     }
 
