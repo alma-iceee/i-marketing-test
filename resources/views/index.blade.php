@@ -260,7 +260,7 @@
                                 <div class="validate"></div>
                             </div>
                             <div class="col-md-6 form-group">
-                                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                                <input type="email" class="form-control" name="email" id="email1" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
                                 <div class="validate"></div>
                             </div>
                         </div>
